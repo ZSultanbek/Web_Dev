@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+  <script>
+    console.log(9007199254740991 + 1); // 9007199254740992
+    console.log(9007199254740991 + 2); // 9007199254740992
+    let name = "John";
+
+    // embed a variable
+    alert( `Hello, ${name}!` ); // Hello, John!
+
+    // embed an expression
+    alert( `the result is ${1 + 2}` ); // the result is 3
+    [2, 1].forEach(alert);
+    let message;
+    message = 'Hello!';
+
+    alert(message); // shows the variable content
+    let age = prompt('How old are you?', 100);
+
+    alert(`You are ${age} years old!`); // You are 100 years old!
+    let isBoss = confirm("Are you the boss?");
+
+    alert( isBoss ); // true if OK is pressed
+    let a = 0;
+alert( Boolean(a) ); // false
+
+let b = "0";
+alert( Boolean(b) ); // true
+
+alert(a == b); // true!
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+if (year == 2015) {
+  alert( "That's correct!" );
+  alert( "You're so smart!" );
+}
+let height = 0;
+
+alert(height || 100); // 100
+alert(height ?? 100); // 0
+let i = 0;
+do {
+  alert( i );
+  i++;
+} while (i < 3);
+let aa = 2 + 4;
+
+switch (aa) {
+  case 3:
+    alert( 'Too small' );
+    break;
+  case 4:
+    alert( 'Exactly!' );
+    break;
+  case 5:
+    alert( 'Too big' );
+    break;
+  default:
+    alert( "I don't know such values" );
+}
+let userName = 'Johnybek';
+
+function showMessage() {
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+let sayHi = function() { // (1) create
+  alert( "Hello" );
+};
+
+let func = sayHi;
+
+showMessage();
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
