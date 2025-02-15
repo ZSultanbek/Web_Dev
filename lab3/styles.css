@@ -1,0 +1,51 @@
+
+body {
+    background-color: #bdbaef;
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+.empty{
+    color: rgb(255, 255, 255);   
+    
+}
+.taskBlock{
+    margin: 20px;
+    padding: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    background-color: #727193;
+    width: 150%;
+    overflow-y: hidden;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+}
+li {
+    background-color: #8b89b5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+.done .delete-btn{
+    background-color: red;
+}
+.delete-btn{
+    display: flex;
+    justify-self: end;
+    right: 10px;
+    background-color: #7570c6;
+}
