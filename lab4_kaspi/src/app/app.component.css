@@ -1,0 +1,4 @@
+.categories {
+  display: grid;
+  grid-row-start: 2;
+}

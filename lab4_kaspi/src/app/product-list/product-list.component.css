@@ -1,0 +1,20 @@
+
+  .product-item {
+    border: 5px solid #969292;
+    background-color: #aeaaaa;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    height: 600px;
+  }
+  .gallery {
+    display: grid;
+    grid-row: 5;
+    min-height: 250px;
+    max-height: 300px;
+    min-width: 100px;
+    max-width: 200px;
+    cursor: pointer;
+  }
+  
