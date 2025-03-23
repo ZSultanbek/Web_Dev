@@ -20,6 +20,7 @@ import { ActivatedRoute } from '@angular/router';
         <button (click)="share(product.link, 'whatsapp')">Share on WhatsApp</button>
         <button (click)="share(product.link, 'telegram')">Share on Telegram</button>
         <button (click)="likeProduct()">Like ({{ product.likes }})</button>
+        <button (click)="dislikeProduct()">Dislike </button>
       </div>
       <div *ngIf="showGallery" class="modal" (click)="closeGallery()">
       <div class="modal-content" (click)="$event.stopPropagation()">
@@ -46,7 +47,25 @@ export class ProductItemComponent {
   }
   
   likeProduct() {
-    this.product.likes++;
+    if (!this.product.isLiked){
+      this.product.likes+=1;
+      if (this.product.isDisliked){
+        this.product.isDisliked = false;
+        this.product.likes+=1;
+      }
+    }
+    this.product.isLiked = true;
+  }
+  
+  dislikeProduct(){
+    if (!this.product.isDisliked){
+      this.product.likes--;
+      if (this.product.isLiked){
+        this.product.likes--;
+        this.product.isLiked = false;
+      }
+    }
+    this.product.isDisliked = true;
   }
   
   share(link: string, platform: string) {

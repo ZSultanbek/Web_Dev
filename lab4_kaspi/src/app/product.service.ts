@@ -16,6 +16,8 @@ export class ProductService {
           ],
           link: 'https://kaspi.kz/shop/p/green-hill-olimpiiskii-sinii-133440793/?c=710000000',
           likes: 0,
+          isLiked: false,
+          isDisliked: false
         },
         {
           name: 'Sport Power Иглбол SP черный',
@@ -27,6 +29,8 @@ export class ProductService {
           ],
           link: 'https://kaspi.kz/shop/p/sport-power-iglbol-sp-chernyi-109120162/?c=710000000',
           likes: 0, 
+          isLiked: false,
+          isDisliked: false
         },]
     },
     {
@@ -43,6 +47,8 @@ export class ProductService {
           ],
           link: 'https://kaspi.kz/shop/p/mototsikl-cf-moto-800nk-abs-chernyi-120013035/?c=710000000',
           likes: 0,
+          isLiked: false,
+          isDisliked: false
         },  ]
     },
     {
@@ -58,6 +64,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/huawei-mate-xt-ultimate-16-gb-1024-gb-krasnyi-132696625/?c=710000000',
         likes: 0,
+        isLiked: false,
+        isDisliked: false
       },
       {
         name: 'Professional Gaming Mouse',
@@ -67,6 +75,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/razer-viper-ultimate-with-charging-dock-rozovyi-110954253/?c=710000000',
         likes: 0,
+        isLiked: false,
+        isDisliked: false
       },
       {
         name: 'Les Paul electro guitar',
@@ -79,6 +89,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/cort-cr250-vb-brown-14200024/?c=710000000',
         likes: 0,
+        isLiked: false,
+        isDisliked: false
       },
       {
         name: 'Тостер',
@@ -89,6 +101,8 @@ export class ProductService {
         ],
         link: 'https://kaspi.kz/shop/p/backercraft-eg-4ats-serebristyi-105637078/?c=710000000',
         likes: 0,
+        isLiked: false,
+        isDisliked: false
       }, 
       ],},
       {
@@ -105,6 +119,8 @@ export class ProductService {
           ],
           link: 'https://kaspi.kz/shop/p/kigurumi-kigurumi-vkz-166858-seryi-128-134-115714627/?c=511010000&hasVariants=true&ref=shared_link',
           likes: 0,
+          isLiked: false,
+          isDisliked: false
         }, 
         {
         name: 'Великие мужские Трусы',
@@ -113,6 +129,8 @@ export class ProductService {
         images: ['https://resources.cdn-kaspi.kz/img/m/p/h5b/h37/64775419658270.jpg?format=gallery-large'],
         link: 'https://kaspi.kz/shop/p/boksery-berrak-tekstil-1097-bordovyi-m-101501584/?c=710000000',
         likes: 0,
+        isLiked: false,
+        isDisliked: false
       },
         {
           name: 'MOST expensive slippers on kaspi',
@@ -122,6 +140,8 @@ export class ProductService {
           ],
           link: 'https://kaspi.kz/shop/p/tapochki-fivab-0707-haki-40-41-130548436/?c=710000000',
           likes: 0,
+          isLiked: false,
+          isDisliked: false
         },  
         
       ]
@@ -139,6 +159,8 @@ export class ProductService {
       ],
       link: 'https://kaspi.kz/shop/p/sport-power-iglbol-sp-chernyi-109120162/?c=710000000',
       likes: 0, 
+      isLiked: false,
+      isDisliked: false
     },];
   }
   
