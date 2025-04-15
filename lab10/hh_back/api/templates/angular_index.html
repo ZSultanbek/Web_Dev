@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular App</title>
+  {% if debug %}
+    <!-- Dev build files (ng build --watch) -->
+    <script src="{% static 'runtime.js' %}" defer></script>
+    <script src="{% static 'polyfills.js' %}" defer></script>
+    <script src="{% static 'vendor.js' %}" defer></script>
+    <script src="{% static 'main.js' %}" defer></script>
+  {% else %}
+    <!-- Prod build files (ng build --configuration production) -->
+     <script src="{% static 'runtime.js' %}" defer></script>
+<script src="{% static 'polyfills.js' %}" defer></script>
+<script src="{% static 'vendor.js' %}" defer></script>
+<script src="{% static 'main.js' %}" defer></script>
+
+  {% endif %}
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
